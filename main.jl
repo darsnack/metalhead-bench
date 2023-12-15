@@ -48,6 +48,7 @@ testloader = DataLoader(testaug; batchsize = bs, buffer = true)
 ##
 
 MODELS = Dict(
+    :AlexNet => [()],
     :EfficientNet => [
         (:b0,),
         (:b1,),
@@ -58,6 +59,12 @@ MODELS = Dict(
         (:b6,),
         (:b7,),
         (:b8,)
+    ],
+    :EfficientNetv2 => [
+        (:small,),
+        (:medium,),
+        (:large,),
+        (:xlarge,)
     ],
     :ResNet => [
         (18,),
